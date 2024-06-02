@@ -7,12 +7,17 @@
 }
 
 body {
+  background-color: lightgoldenrodyellow;
+}
+
+main {
+  width: 70%;
+  margin: auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightgoldenrodyellow;
   color: black;
   gap: 3rem;
 }
@@ -64,4 +69,28 @@ button {
 button:hover {
   background-color: hsl(203, 68%, 71%);
   font-weight: bold;
+}
+
+@media(max-width:768px) {
+  main {
+    gap: 2rem;
+  }
+
+  main h2 {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width:480px) {
+  main {
+    gap: 1.5rem;
+  }
+
+  main h2 {
+    font-size: .75rem;
+  }
+
+  main p {
+    font-size: .7rem;
+  }
 }
