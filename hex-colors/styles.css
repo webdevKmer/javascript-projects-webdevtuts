@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgoldenrodyellow;
+  color: black;
+  gap: 3rem;
+}
+
+h2 {
+  text-align: center;
+  animation: colorchange 5s infinite alternate;
+}
+
+@keyframes colorchange {
+  0% {
+    color: green;
+  }
+
+  20% {
+    color: red;
+  }
+
+  40% {
+    color: orchid;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  80% {
+    color: brown;
+  }
+
+  100% {
+    color: orange;
+  }
+}
+
+.hex-value {
+  font-size: 2rem;
+}
+
+button {
+  padding: .5rem 1rem;
+  cursor: pointer;
+  border: unset;
+  border-radius: .5rem;
+  background-color: lightskyblue;
+  border: 2px solid black;
+}
+
+button:hover {
+  background-color: hsl(203, 68%, 71%);
+  font-weight: bold;
+}
