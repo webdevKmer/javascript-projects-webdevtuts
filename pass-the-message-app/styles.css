@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-size: 15px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -16,12 +15,12 @@ body {
 
 .message-container {
   padding: 1rem 2rem;
-  border: 2px solid salmon;
   width: 70vw;
   min-width: 360px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: lightgreen;
 }
 
 header h2 {
@@ -67,6 +66,7 @@ button {
 
 button:hover {
   cursor: pointer;
+  font-weight: bold;
   background-color: salmon;
 }
 
@@ -77,6 +77,18 @@ button:hover {
 }
 
 .message {
-  border: 1px solid salmon;
+  border-bottom: 1px solid salmon;
   padding: .5rem;
+}
+
+@media(max-width:480px) {
+  .message-container {
+    width: 100%;
+    min-width: 240px;
+    padding: 1rem .5rem;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
 }
