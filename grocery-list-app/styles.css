@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 1rem 2rem;
+  width: 70vw;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: lightgreen;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid lightgray;
+}
+
+main {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  outline: none;
+  border: unset;
+}
+
+main span {
+  padding: .5rem;
+}
+
+.message-input {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid salmon;
+  border-radius: .5rem;
+  align-self: flex-start;
+}
+
+button:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: salmon;
+}
+
+.grocery-list {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.grocery {
+  border-bottom: 1px solid salmon;
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.grocery span {
+  font-size: 2rem;
+}
+
+svg {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+@media(max-width:480px) {
+  .container {
+    width: 100%;
+    min-width: 240px;
+    padding: 1rem .5rem;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
