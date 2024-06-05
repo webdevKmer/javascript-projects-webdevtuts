@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  padding: .5rem 0;
+  background-color: rgb(66, 195, 66);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  color: whitesmoke;
+  border: 6px solid lightgray;
+}
+
+.container span {
+  font-size: 6rem;
+
+}
+
+@media(max-width:768px) {
+  .container span {
+    font-size: 4rem;
+
+  }
+}
+
+@media(max-width:480px) {
+  .container span {
+    font-size: 3rem;
+
+  }
+}
